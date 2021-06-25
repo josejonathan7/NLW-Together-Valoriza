@@ -10,8 +10,6 @@ app.use(express.json())
 
 app.use(router);
 
-
-
 //uma maneira de tratar erro sem ser o try cath, normalmente utilizado em códigos mais longos onde fica cansativo usar try cath
 app.use((err: Error, request: Request, response: Response, next: NextFunction) => {
     if(err instanceof Error){
